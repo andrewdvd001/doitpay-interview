@@ -9,10 +9,8 @@ ${USERNAME_FIELD} =  id=username
 ${PASSWORD_FIELD} =  id=password
 ${SUBMIT_BUTTON} =  id=login-button
 
-# Positive Data
+# Test Data
 ${VALID_USERNAME} =  AdaSubally
 ${VALID_PASSWORD} =  AdaSuballyPassword
-
-# Negative Data
 ${INVALID_USERNAME} =  AdaSuballyInvalid
 ${INVALID_PASSWORD} =  AdaSuballyPasswordInvalid
