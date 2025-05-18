@@ -13,28 +13,28 @@ User successfully login with valid credential display "Welcome" message
     loginApp.Input Username    ${VALID_USERNAME}
     loginApp.Input Password    ${VALID_PASSWORD}
     loginApp.Click Login Button
-    loginApp.Verify success message appears contain "Welcome" message
+    loginApp.Verify welcome message visible
 
 User failed login with missing username display "Username required" message
     [Tags]    ID002    Functional
     loginApp.Input Username    ${EMPTY}
     loginApp.Input Password    ${VALID_PASSWORD}
     loginApp.Click Login Button
-    loginApp.Verify error message appear contain "Username required"
+    loginApp.Verify error message    Username required
 
 User failed login with missing password display "Password required" message
     [Tags]    ID003    Functional
     loginApp.Input Username    ${VALID_USERNAME}
     loginApp.Input Password    ${EMPTY}
     loginApp.Click Login Button
-    loginApp.Verify error message appear contain "Password required"
+    loginApp.Verify error message    Password required
 
 User failed login with invalid Username display "Wrong Username or Password" message
     [Tags]    ID004    Functional
     loginApp.Input Username    ${INVALID_USERNAME}
     loginApp.Input Password    ${VALID_PASSWORD}
     loginApp.Click Login Button
-    loginApp.Verify error message appear contain "Wrong Username or Password"
+    loginApp.Verify error message    Wrong Username or Password
 
 
 User failed login with invalid Password display "Wrong Username or Password" message
@@ -42,5 +42,5 @@ User failed login with invalid Password display "Wrong Username or Password" mes
     loginApp.Input Username    ${VALID_USERNAME}
     loginApp.Input Password    ${INVALID_PASSWORD}
     loginApp.Click Login Button
-    loginApp.Verify error message appear contain "Wrong Username or Password"
+    loginApp.Verify error message    Wrong Username or Password
 
