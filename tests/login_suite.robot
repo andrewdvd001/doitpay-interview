@@ -45,7 +45,7 @@ ID005 - User failed login with invalid Password display wrong username or passwo
 
 ID006 - User failed login with missing password and password display username and password are required message
     [Tags]    Functional
-    loginApp.Input Username    ${VALID_USERNAME}
+    loginApp.Input Username    ${EMPTY}
     loginApp.Input Password    ${EMPTY}
     loginApp.Click Login Button
     loginApp.Verify error message    Username and Password are required
