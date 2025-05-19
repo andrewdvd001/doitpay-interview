@@ -14,3 +14,7 @@ ${VALID_USERNAME} =  standard_user
 ${VALID_PASSWORD} =  secret_sauce
 ${INVALID_USERNAME} =  standard_user1
 ${INVALID_PASSWORD} =  standard_user
+
+#Security Data
+${XSS_PAYLOAD} =  <script>alert('xss')</script>
+${SQL_PAYLOAD} =   ' OR '1'='1' --
