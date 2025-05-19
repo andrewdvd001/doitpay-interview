@@ -10,7 +10,7 @@ ${PASSWORD_FIELD} =  id=password
 ${SUBMIT_BUTTON} =  id=login-button
 
 # Test Data
-${VALID_USERNAME} =  AdaSubally
-${VALID_PASSWORD} =  AdaSuballyPassword
-${INVALID_USERNAME} =  AdaSuballyInvalid
-${INVALID_PASSWORD} =  AdaSuballyPasswordInvalid
+${VALID_USERNAME} =  standard_user
+${VALID_PASSWORD} =  secret_sauce
+${INVALID_USERNAME} =  standard_user1
+${INVALID_PASSWORD} =  standard_user
