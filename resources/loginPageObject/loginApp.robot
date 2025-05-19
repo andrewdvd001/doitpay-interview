@@ -17,9 +17,13 @@ Click Login Button
     Wait Until Element Is Visible    ${SUBMIT_BUTTON}    timeout=${SELENIUM_TIMEOUT}
     Click Button    ${SUBMIT_BUTTON}
 
-Verify welcome message visible
-    Page Should Contain    Welcome
+Verify welcome message is visible
+    [Arguments]    ${expected_success_message}=Welcome
+    Page Should Contain    ${expected_success_message}
 
 Verify error message
-    [Arguments]    ${expected_message}
-    Page Should Contain   ${expected_message}
+    [Arguments]    ${expected_error_message}
+    Page Should Contain   ${expected_error_message}
+
+Page Should Not Contain JavaScript Alerts
+    Alert Should Not Be Present
