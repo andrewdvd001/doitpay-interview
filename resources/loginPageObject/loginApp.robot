@@ -18,7 +18,7 @@ Click Login Button
     Click Button    ${SUBMIT_BUTTON}
 
 Verify welcome message visible
-    Page Should Contain    Products
+    Page Should Contain    Welcome
 
 Verify error message
     [Arguments]    ${expected_message}
