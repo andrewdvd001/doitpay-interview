@@ -7,15 +7,15 @@ This repository contains UI automation tests for the Doitpay tests using **Robot
 
 # Project Structure
 
-    ├── tests/              # Contains test cases
+    ├── tests/                  # Contains test cases
     │   └── login_suite.robot    
-    ├── resources/          # Reusable keywords (Page Objects)
-    │   └── loginApp.robot
-    ├── variables/          # Global test data (usernames, passwords, URLs)
+    ├── resources/              # Reusable keywords (Page Objects)
+    │   └── loginPageObject
+    │       └── loginApp.robot
+    │   └── commonWeb.robot     # Common setup/teardown keywords
+    ├── variables/              # Global test data (usernames, passwords, URLs)
     │   └── loginVariables.robot
-    ├── common/             # Common setup/teardown keywords
-    │   └── commonWeb.robot
-    └── README.md           # Project documentation
+    └── README.md               # Project documentation
 
 ---
 
